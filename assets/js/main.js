@@ -16,6 +16,23 @@ var swiper = new Swiper('.mySwiper', {
 	},
 })
 
+//Switch tab
+function switchTab(tab) {
+	var i
+	var x = document.getElementsByClassName('tab')
+
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = 'none'
+	}
+	document.getElementById(tab).style.display = 'block'
+}
+
+$(document).ready(function (tab) {
+	$('.button-tab').click(function (val) {
+		$('.button-tab').toggleClass('active')
+	})
+})
+
 // show and hide browser-category
 var nav = document.getElementById('nav')
 var browser = document.getElementById('browser-category')
