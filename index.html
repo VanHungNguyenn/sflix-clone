@@ -38,7 +38,7 @@
 					<div class="container">
 						<div class="header-left">
 							<a
-								href="/"
+								href="./index.html"
 								id="logo"
 								class="header-logo header-logo-full"
 								title="SFlix"
@@ -50,8 +50,220 @@
 								/>
 							</a>
 							<div id="header-brower">
-								<div class="header-btn">
+								<div class="header-btn" onclick="showMenu()">
 									<i class="fas fa-bars"></i> Browser
+								</div>
+								<div id="nav">
+									<div
+										class="browser-category"
+										id="browser-category"
+									>
+										<div
+											class="button-exit"
+											onclick="hideMenu()"
+										>
+											<i
+												class="fas fa-arrow-circle-left"
+											></i>
+										</div>
+										<ul class="navbar" id="navbar">
+											<li>
+												<a href="#"
+													><i class="fas fa-home"></i>
+													Home</a
+												>
+											</li>
+											<li>
+												<a href="./movies"
+													><i
+														class="
+															fas
+															fa-play-circle
+														"
+													></i>
+													Movies</a
+												>
+											</li>
+											<li>
+												<a href="./tvshows"
+													><i
+														class="fas fa-video"
+													></i>
+													TV Shows</a
+												>
+											</li>
+											<li>
+												<a href="./top-imdb"
+													><i class="fas fa-fire"></i>
+													Top IMDB</a
+												>
+											</li>
+										</ul>
+										<div class="genre">
+											<h2 class="category-heading">
+												Genre
+											</h2>
+											<div class="genre-list">
+												<div class="genre-item">
+													Action
+												</div>
+												<div class="genre-item">
+													Action & Adventure
+												</div>
+												<div class="genre-item">
+													Adventure
+												</div>
+												<div class="genre-item">
+													Animation
+												</div>
+												<div class="genre-item">
+													Comedy
+												</div>
+												<div class="genre-item">
+													Crime
+												</div>
+												<div class="genre-item">
+													Documentary
+												</div>
+												<div class="genre-item">
+													Drama
+												</div>
+												<div class="genre-item">
+													Family
+												</div>
+												<div class="genre-item">
+													Fantasy
+												</div>
+												<div class="genre-item">
+													History
+												</div>
+												<div class="genre-item">
+													Horror
+												</div>
+												<div class="genre-item">
+													Kids
+												</div>
+												<div class="genre-item">
+													Music
+												</div>
+												<div class="genre-item">
+													Mystery
+												</div>
+												<div class="genre-item">
+													News
+												</div>
+												<div class="genre-item">
+													Reality
+												</div>
+												<div class="genre-item">
+													Romance
+												</div>
+												<div class="genre-item">
+													Sci-Fi & Fantasy
+												</div>
+												<div class="genre-item">
+													Science Fiction
+												</div>
+												<div class="genre-item">
+													Soap
+												</div>
+												<div class="genre-item">
+													Talk
+												</div>
+												<div class="genre-item">
+													Thriller
+												</div>
+												<div class="genre-item">
+													TV Movie
+												</div>
+												<div class="genre-item">
+													War
+												</div>
+												<div class="genre-item">
+													War & Politics
+												</div>
+												<div class="genre-item">
+													Western
+												</div>
+											</div>
+										</div>
+										<div class="country">
+											<h2 class="category-heading">
+												Country
+											</h2>
+											<div class="country-list">
+												<div class="country-item">
+													Argentina
+												</div>
+												<div class="country-item">
+													Australia
+												</div>
+												<div class="country-item">
+													Austria
+												</div>
+												<div class="country-item">
+													Belgium
+												</div>
+												<div class="country-item">
+													Brazil
+												</div>
+												<div class="country-item">
+													Canada
+												</div>
+												<div class="country-item">
+													China
+												</div>
+												<div class="country-item">
+													Czech Rebuplic
+												</div>
+												<div class="country-item">
+													Denmark
+												</div>
+												<div class="country-item">
+													Finland
+												</div>
+												<div class="country-item">
+													France
+												</div>
+												<div class="country-item">
+													Germany
+												</div>
+												<div class="country-item">
+													Hong Kong
+												</div>
+												<div class="country-item">
+													Hungary
+												</div>
+												<div class="country-item">
+													India
+												</div>
+												<div class="country-item">
+													Iceland
+												</div>
+												<div class="country-item">
+													Israel
+												</div>
+												<div class="country-item">
+													Italy
+												</div>
+												<div class="country-item">
+													Japan
+												</div>
+												<div class="country-item">
+													Luxembourg
+												</div>
+												<div class="country-item">
+													Mexico
+												</div>
+												<div class="country-item">
+													Vietnam
+												</div>
+												<div class="country-item">
+													United States of America
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div id="search">
@@ -72,11 +284,15 @@
 							</div>
 						</div>
 						<a
-							href="/"
+							href="./index.html"
 							class="header-logo header-logo-responsive"
 							title="SFlix"
 						>
-							<img class="main-logo" src="./assets/images/logo.png" alt="logo" />
+							<img
+								class="main-logo"
+								src="./assets/images/logo.png"
+								alt="logo"
+							/>
 						</a>
 						<div class="header-right">
 							<div class="search-button">
@@ -100,14 +316,24 @@
 											alt=""
 										/>
 									</div>
-									<div class="swiper-slide">Slide 2</div>
-									<div class="swiper-slide">Slide 3</div>
-									<div class="swiper-slide">Slide 4</div>
-									<div class="swiper-slide">Slide 5</div>
-									<div class="swiper-slide">Slide 6</div>
-									<div class="swiper-slide">Slide 7</div>
-									<div class="swiper-slide">Slide 8</div>
-									<div class="swiper-slide">Slide 9</div>
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/background2.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/background3.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/background4.jpg"
+											alt=""
+										/>
+									</div>
 								</div>
 								<div class="swiper-button-next"></div>
 								<div class="swiper-button-prev"></div>
@@ -116,14 +342,14 @@
 							<div class="top-slider-basic-film">
 								<div class="basic-film-list">
 									<div class="basic-item">
-										<div class="film-poster">
+										<div class="basic-item_film-poster">
 											<a href="#"
 												><img
 													src="./assets/images/top-film-1.jpg"
 													alt=""
 											/></a>
 										</div>
-										<div class="film-detail">
+										<div class="basic-item_film-detail">
 											<div class="film-infor">
 												<span class="film-infor-item">
 													<i class="fas fa-star"></i>
@@ -160,14 +386,14 @@
 										</div>
 									</div>
 									<div class="basic-item">
-										<div class="film-poster">
+										<div class="basic-item_film-poster">
 											<a href="#"
 												><img
 													src="./assets/images/top-film-1.jpg"
 													alt=""
 											/></a>
 										</div>
-										<div class="film-detail">
+										<div class="basic-item_film-detail">
 											<div class="film-infor">
 												<span class="film-infor-item">
 													<i class="fas fa-star"></i>
@@ -204,14 +430,14 @@
 										</div>
 									</div>
 									<div class="basic-item">
-										<div class="film-poster">
+										<div class="basic-item_film-poster">
 											<a href="#"
 												><img
 													src="./assets/images/top-film-1.jpg"
 													alt=""
 											/></a>
 										</div>
-										<div class="film-detail">
+										<div class="basic-item_film-detail">
 											<div class="film-infor">
 												<span class="film-infor-item">
 													<i class="fas fa-star"></i>
