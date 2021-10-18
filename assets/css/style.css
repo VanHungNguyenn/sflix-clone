@@ -176,6 +176,77 @@ body {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+/* Search-recommend */
+
+.search-input:focus~.search-recommend {
+    display: block;
+}
+
+.search-recommend {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    background-color: #2f3441;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+    /* display: block; */
+    display: none;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.search-recommend-item {
+    display: flex;
+    height: 9rem;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.search-recommend-item img {
+    width: 5rem;
+    height: 7rem;
+}
+
+.search-recommend-infor {
+    padding: 2rem;
+    display: block;
+}
+
+.search-recommend-title {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.search-recommend-infor ul {
+    list-style-type: none;
+    color: #ccc;
+    display: flex;
+    margin-top: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.search-recommend-result {
+    padding: 1.5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    background: #00acc1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.search-recommend-result i {
+    margin-left: 1rem;
+}
+
+.search-recommend-infor ul li {
+    padding-right: 2rem;
+}
+
 .header-logo-responsive {
     align-self: center;
     display: none;
@@ -198,7 +269,7 @@ body {
     text-align: center;
     cursor: pointer;
     display: none;
-    padding-right: 5rem;
+    margin-right: 4rem;
 }
 
 .account {
