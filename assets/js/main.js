@@ -2,10 +2,10 @@ var swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
 	spaceBetween: 30,
 	loop: true,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false,
-	},
+	// autoplay: {
+	// 	delay: 5000,
+	// 	disableOnInteraction: false,
+	// },
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -46,4 +46,12 @@ function showMenu() {
 function hideMenu() {
 	// nav.style.left = '-400px'
 	nav.style.display = 'none'
+}
+
+// Button Search Mobile
+let searchButtonMobile = document.querySelector('#search-button-mobile')
+let searchMobile = document.querySelector('.search-mobile')
+
+searchButtonMobile.onclick = () => {
+	searchMobile.classList.toggle('active')
 }
