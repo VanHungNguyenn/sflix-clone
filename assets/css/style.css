@@ -72,6 +72,7 @@ body {
     background-color: #2f3441;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 #header .container {
@@ -898,6 +899,148 @@ body {
 
 .filter-search-button {
     background-color: var(--primary-color);
+}
+
+/* Film detail  */
+
+.mw-detail {
+    background: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.detail-container {
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 22rem 2rem 22rem;
+    display: flex;
+}
+
+.detail-film-poster {
+    display: flex;
+    align-items: center;
+}
+
+.detail-film-infor {
+    padding: 1rem 0 1rem 4rem;
+}
+
+.detail-film-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.detail-film-key {
+    display: flex;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.detail-film-key>div {
+    margin-right: 2.5rem;
+    line-height: 2.6rem;
+}
+
+.detail-film-quality {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border: 1px solid #fff;
+    padding: 0 .3rem;
+}
+
+.detail-film-imdb {
+    color: #ffd800;
+}
+
+.detail-film-button {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.button-server {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    margin-right: 1rem;
+    color: #000;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-server i {
+    margin-right: 1rem;
+}
+
+.detail-film-description {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.detail-film-description-title {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.detail-film-element {
+    display: flex;
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    justify-content: space-between;
+}
+
+.element-left, .element-right {
+    width: 48%;
+}
+
+.element-item strong {
+    color: #fff;
+    margin-right: .5rem;
+}
+
+.element-item span {
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.element-item span:hover {
+    color: var(--primary-color);
+}
+
+.element-item span:first-child {
+    margin-left: 0;
+}
+
+.detail-film-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    color: #000;
+    background-color: #fff;
+    margin-right: .5rem;
+    padding: .6rem 1.2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
 }
 
 /* Media query */
