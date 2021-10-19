@@ -2,10 +2,10 @@ var swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
 	spaceBetween: 30,
 	loop: true,
-	// autoplay: {
-	// 	delay: 5000,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	},
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -55,3 +55,14 @@ let searchMobile = document.querySelector('.search-mobile')
 searchButtonMobile.onclick = () => {
 	searchMobile.classList.toggle('active')
 }
+
+// Modal filter
+$(document).ready(function () {
+	$('#filter_button').click(function () {
+		$('.filter-modal').css('transform', 'scale(1)')
+	})
+
+	$('#close_button').click(function () {
+		$('.filter-modal').css('transform', 'scale(0)')
+	})
+})
