@@ -524,6 +524,7 @@ body {
 
 .basic-item_film-detail {
     padding: 1rem;
+    height: 100%;
 }
 
 /* Slider-social */
@@ -909,22 +910,37 @@ body {
     background-position: center center;
     background-size: cover;
     position: relative;
-    height: 650px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
+.cover-follow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient( 0deg, #13151a 0, rgba(19, 21, 26, 0) 100%);
+}
+
 .detail-container {
     max-width: 1600px;
     width: 100%;
-    padding: 0 22rem 2rem 22rem;
+    padding: 25rem 22rem 2rem 22rem;
     display: flex;
+    /* display: block; */
+    z-index: 2;
 }
 
 .detail-film-poster {
     display: flex;
     align-items: center;
+}
+
+.detail-film-poster img {
+    width: 240px;
+    height: auto;
 }
 
 .detail-film-infor {
@@ -965,8 +981,10 @@ body {
 }
 
 .detail-film-button {
+    width: 100%;
     margin-bottom: 2rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .button-server {
@@ -982,11 +1000,16 @@ body {
     cursor: pointer;
 }
 
+.button-server:hover {
+    opacity: .9;
+}
+
 .button-server i {
     margin-right: 1rem;
 }
 
 .detail-film-description {
+    width: 100%;
     margin-bottom: 2rem;
     font-size: 1.3rem;
     line-height: 1.8rem;
@@ -1004,10 +1027,12 @@ body {
     line-height: 1.8rem;
     font-size: 1.3rem;
     justify-content: space-between;
+    width: 100%;
 }
 
 .element-left, .element-right {
     width: 48%;
+    padding-right: 1rem;
 }
 
 .element-item strong {
@@ -1044,6 +1069,12 @@ body {
 }
 
 /* Media query */
+
+@media screen and (max-width: 1600px) {
+    .detail-container {
+        padding: 20rem 2rem 2rem 2rem;
+    }
+}
 
 @media screen and (max-width: 1299px) {
     .header-logo-full {
@@ -1106,6 +1137,23 @@ body {
     }
     .filter-modal-container {
         padding: 2rem 2rem;
+    }
+    .detail-container {
+        padding: 10rem 2rem 2rem 2rem;
+        display: block;
+    }
+    .element-left, .element-right {
+        width: 100%;
+    }
+    .detail-film-infor {
+        padding: 3rem 0 2rem 0;
+    }
+    .detail-film-poster img {
+        width: 150px;
+        height: auto;
+    }
+    .detail-film-element {
+        display: block;
     }
 }
 
