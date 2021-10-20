@@ -23,6 +23,7 @@ body {
     font-weight: 400;
     background: #1e2129;
     color: #8e95a5;
+    overflow-x: hidden;
 }
 
 .container {
@@ -343,9 +344,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: 100;
-    /* transition: 1s; */
     display: none;
-    transition: 1s;
 }
 
 .browser-category {
@@ -753,7 +752,7 @@ body {
 }
 
 .footer-link-ul li:last-child {
-    margin-left: 0rem;
+    margin-right: 0rem;
 }
 
 .footer-link-ul li a {
@@ -1068,6 +1067,62 @@ body {
     margin-bottom: .5rem;
 }
 
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.pagination ul {
+    display: flex;
+    background-color: #2f3441;
+    padding: .8rem;
+    border-radius: 5rem;
+}
+
+.pagination ul li {
+    color: var(--primary-color);
+    list-style: none;
+    line-height: 4.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.pagination ul li.numb {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.pagination ul li.dots {
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+.pagination ul li.button {
+    padding: 0 2rem;
+}
+
+.pagination ul li.prev {
+    border-radius: 2.5rem .5rem .5rem 2.5rem;
+}
+
+.pagination ul li.next {
+    border-radius: .5rem 2.5rem 2.5rem .5rem;
+}
+
+.pagination ul li.active, .pagination ul li.button:hover, .pagination ul li.numb:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
 /* Media query */
 
 @media screen and (max-width: 1600px) {
@@ -1190,10 +1245,41 @@ body {
         margin-bottom: 2rem;
         margin-right: 2rem;
     }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        padding: 5rem 0;
+    }
+    .pagination ul li {
+        color: var(--primary-color);
+        list-style: none;
+        line-height: 3.5rem;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    .pagination ul li.numb {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        margin: 0 3px;
+    }
+    .pagination ul li.dots {
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    .pagination ul li.button {
+        padding: 0 .3rem;
+    }
 }
 
 @media screen and (max-width: 400px) {
     .btn {
         padding: .1rem .3rem;
+    }
+    .button span i {
+        display: none;
     }
 }
