@@ -428,6 +428,11 @@ body {
     font-size: 1.2rem;
 }
 
+.genre-item a, .country-item a {
+    text-decoration: none;
+    color: #ccc;
+}
+
 /* Main wrapper */
 
 #main-wrapper {
